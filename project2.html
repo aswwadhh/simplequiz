@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(129, 126, 126);
+    overflow: hidden;
+}
+.a {
+    color: green;
+}
+.b
+{
+
+background-color: green;
+color: azure;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    max-height: 90vh;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.question h2 {
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+
+}
+
+.answer {
+    display: none;
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="a">GK Quiz</h1>
+        <form action="#result">
+            <div class="question">
+                <h2>1. What is the capital of France?</h2>
+                <label><input type="radio" name="q1" value="a"> a) Berlin</label><br>
+                <label><input type="radio" name="q1" value="b"> b) Madrid</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Paris</label><br>
+                <label><input type="radio" name="q1" value="d"> d) Rome</label>
+                <p class="answer">Correct Answer: Paris</p>
+            </div>
+            <div class="question">
+                <h2>2. What is 2 + 2?</h2>
+                <label><input type="radio" name="q2" value="a"> a) 3</label><br>
+                <label><input type="radio" name="q2" value="b"> b) 4</label><br>
+                <label><input type="radio" name="q2" value="c"> c) 5</label><br>
+                <label><input type="radio" name="q2" value="d"> d) 6</label>
+                <p class="answer">Correct Answer: 4</p>
+            </div>
+            <div class="question">
+                <h2>3. Which state in India is known as "God's own country"?</h2>
+                <label><input type="radio" name="q3" value="a"> a) Haryana</label><br>
+                <label><input type="radio" name="q3" value="b"> b) Punjab</label><br>
+                <label><input type="radio" name="q3" value="c"> c) Kerala</label><br>
+                <label><input type="radio" name="q3" value="d"> d) Rajasthan</label>
+                <p class="answer">Correct Answer: Kerala</p>
+            </div>
+            <div class="question">
+                <h2>4. Who was the second Prime Minister of India?</h2>
+                <label><input type="radio" name="q4" value="a"> a) Indira Gandhi</label><br>
+                <label><input type="radio" name="q4" value="b"> b) Shri Morarji Desai</label><br>
+                <label><input type="radio" name="q4" value="c"> c) Lal Bahadur Shastri</label><br>
+                <label><input type="radio" name="q4" value="d"> d) Atal Bihari Vajpayee</label>
+                <p class="answer">Correct Answer: Lal Bahadur Shastri</p>
+            </div>
+            <div class="question">
+                <h2>5. Which is the longest river in India?</h2>
+                <label><input type="radio" name="q5" value="a"> a) Narmada</label><br>
+                <label><input type="radio" name="q5" value="b"> b) Ganga</label><br>
+                <label><input type="radio" name="q5" value="c"> c) Godavari</label><br>
+                <label><input type="radio" name="q5" value="d"> d) Yamuna</label>
+                <p class="answer">Correct Answer: Ganga</p>
+            </div>
+            <div class="question">
+                <h2>6. What was the capital of China before Beijing?</h2>
+                <label><input type="radio" name="q6" value="a"> a) Fujian</label><br>
+                <label><input type="radio" name="q6" value="b"> b) Nanjing</label><br>
+                <label><input type="radio" name="q6" value="c"> c) Sichuan</label><br>
+                <label><input type="radio" name="q6" value="d"> d) Shanghai</label>
+                <p class="answer">Correct Answer: Nanjing</p>
+            </div>
+            <div class="question">
+                <h2>7. Who was the first President of the United States?</h2>
+                <label><input type="radio" name="q7" value="a"> a) George Washington</label><br>
+                <label><input type="radio" name="q7" value="b"> b) Barack Obama</label><br>
+                <label><input type="radio" name="q7" value="c"> c) Abraham Lincoln</label><br>
+                <label><input type="radio" name="q7" value="d"> d) James Madison</label>
+                <p class="answer">Correct Answer: George Washington</p>
+            </div>
+            <input class="b"  type="submit" value="Submit">
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
